@@ -1,0 +1,20 @@
+﻿@model PicOfTheDay
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container">
+    <h1 class="mt-5">Welcome to Picture of the Day by NASA</h1>
+    
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="@Model.NormalPicUrl" class="img-fluid" alt="Picture of the Day">
+            <p class="text-muted mt-2">Date: @Model.Date</p>
+        </div>
+        
+        <div class="col-md-6">
+            <p>@Model.Explanation</p>
+        </div>
+    </div>
+</div>
